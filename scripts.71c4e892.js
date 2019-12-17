@@ -156,6 +156,9 @@ function () {
       }
 
       this.words = text.split(' ');
+      this.words = this.words.filter(function (word) {
+        return word.length > 3;
+      });
       return this.generateWords();
     }
   }, {
@@ -305,7 +308,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50915" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54069" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

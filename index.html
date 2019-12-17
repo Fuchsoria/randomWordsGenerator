@@ -1,1 +1,42 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="X-UA-Compatible" content="ie=edge"><title>Random Words Generator</title><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"></head><body> <div class="container mt-3"> <div class="row"> <div class="col-6"> <h4>Your text:</h4> <form class="generate-form"> <textarea class="form-control text" placeholder="Input your text"></textarea> <button class="btn btn-primary mt-3" type="submit"> Generate Words! </button> </form> </div> <div class="col-6"> <h4>Result:</h4> <table class="table table-striped"> <thead> <tr> <th scope="col">Words</th> </tr> </thead> <tbody class="result"></tbody> </table> </div> </div> </div> <template id="result-template"> <tr class="result__row"> <td class="result__word"></td> </tr> </template> <script src="scripts.84e422dc.js"></script> </body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Random Words Generator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container mt-3">
+      <div class="row">
+        <div class="col-6">
+          <h4>Your text:</h4>
+          <form class="generate-form">
+            <textarea class="form-control text" placeholder="Input your text"></textarea>
+            <button class="btn btn-primary mt-3" type="submit">
+              Generate Words!
+            </button>
+          </form>
+        </div>
+        <div class="col-6">
+          <h4>Result:</h4>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Words</th>
+              </tr>
+            </thead>
+            <tbody class="result"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <template id="result-template">
+      <tr class="result__row">
+        <td class="result__word"></td>
+      </tr>
+    </template>
+    <script src="/scripts.71c4e892.js"></script>
+  </body>
+</html>
