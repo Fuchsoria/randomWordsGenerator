@@ -8,6 +8,7 @@ export default class RandomWords {
     }
 
     this.words = text.split(' ');
+    this.words = this.words.filter((word) => word.length > 3);
     return this.generateWords();
   }
   sliceWord(word) {
