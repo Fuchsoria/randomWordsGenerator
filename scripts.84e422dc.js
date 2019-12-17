@@ -5,4 +5,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"dgpK":[function(require,module,exports) {
 "use strict";var e=t(require("./modules/randomWords")),r=t(require("./modules/ui"));function t(e){return e&&e.__esModule?e:{default:e}}var u=document.querySelector(".text"),n=document.querySelector(".generate-form"),o=document.querySelector(".result"),l=document.querySelector("#result-template"),d=new e.default,c=new r.default(o,u,l);n.addEventListener("submit",function(e){e.preventDefault(),Promise.resolve().then(c.clearWords()).then(c.renderWords(d.setWords(u.value))).then(c.clearTextContainer()).catch(function(e){return console.log(e)})});
 },{"./modules/randomWords":"x9qT","./modules/ui":"xRui"}]},{},["dgpK"], null)
-//# sourceMappingURL=/scripts.84e422dc.js.map
+//# sourceMappingURL=scripts.84e422dc.js.map
